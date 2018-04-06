@@ -1,0 +1,48 @@
+public class GradingClass{
+
+/**
+*/
+
+public GradingClass(){}
+char gradeAssign;
+int grade_score;
+
+public char grade(int grade)
+{
+if(grade>=0 && grade<=100){
+
+if(grade >=  90 && grade <= 100){
+gradeAssign = 'O';
+}
+else if(grade >=  90 && grade < 80){
+gradeAssign = 'E';
+}
+else if(grade >= 70 && grade < 80){
+gradeAssign = 'A';
+}
+
+
+else if(grade >= 60 && grade < 70){
+gradeAssign = 'B';
+}
+else if(grade >= 50 && grade < 60){
+gradeAssign = 'C';
+}
+
+else if(grade>= 40 && grade < 50){
+gradeAssign = 'D';
+}
+
+else{
+gradeAssign = 'F';
+}
+
+}//closing of parent if statement
+
+else{
+gradeAssign = 'Invalid entry';
+}
+return gradeAssign;
+
+}//closing brace for the method grade
+}//closing brace for the class grade
