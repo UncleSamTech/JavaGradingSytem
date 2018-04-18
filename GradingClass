@@ -1,35 +1,39 @@
 public class GradingClass{
 
 /**
+This is a java class that has a method called 
+@method grade declared with an arguement called 
+@args grade which is of data type double that is used to grading
+according to a specified grading limit
 */
 
 public GradingClass(){}
 char gradeAssign;
-int grade_score;
+double grade_score;
 
-public char grade(int grade)
+public char grade(double grade)
 {
-if(grade>=0 && grade<=100){
+if(grade>=0.00 && grade<=100.00){
 
-if(grade >=  90 && grade <= 100){
+if(grade >=  90.00 && grade <= 100.00){
 gradeAssign = 'O';
 }
-else if(grade >=  90 && grade < 80){
+else if(grade >=  90.00 && grade < 80.00){
 gradeAssign = 'E';
 }
-else if(grade >= 70 && grade < 80){
+else if(grade >= 70.00 && grade < 80.00){
 gradeAssign = 'A';
 }
 
 
-else if(grade >= 60 && grade < 70){
+else if(grade >= 60.00 && grade < 70.00){
 gradeAssign = 'B';
 }
-else if(grade >= 50 && grade < 60){
+else if(grade >= 50.00 && grade < 60.00){
 gradeAssign = 'C';
 }
 
-else if(grade>= 40 && grade < 50){
+else if(grade>= 40.00 && grade < 50.00){
 gradeAssign = 'D';
 }
 
